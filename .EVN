@@ -1,0 +1,37 @@
+const canvas = document.getElementById('canvas');
+const ctx = canvas.getContext('2d');
+
+const image = new Image();
+image.src = 'path/to/image.jpg';
+
+image.onload = function() {
+  // Draw the image onto the canvas
+  ctx.drawImage(image, 0, 0, canvas.width, canvas.height);
+
+  // Use canvas transformation methods to manipulate the image
+  ctx.scale(1.5, 1.5);
+  ctx.rotate(Math.PI / 4);
+  ctx.translate(100, 100);
+
+  // Use canvas drawing methods to draw additional elements onto the canvas
+  ctx.fillStyle = '#ffffff';
+  ctx.beginPath();
+  ctx.arc(90, 90, 5, 0, 2 * Math.PI);
+  ctx.arc(110, 90, 5, 0, 2 * Math.PI);
+  ctx.fill();
+
+  ctx.strokeStyle = '#000000';
+  ctx.beginPath();
+  ctx.arc(90, 90, 3, 0, 2 * Math.PI);
+  ctx.arc(110, 90, 3, 0, 2 * Math.PI);
+  ctx.stroke();
+
+  ctx.strokeStyle = '#ff00ff';
+  ctx.beginPath();
+  ctx.arc(100, 110, 20, 0, Math.PI);
+  ctx.stroke();
+
+  // Use canvas compositing methods to blend the image and additional elements together
+  ctx.globalCompositeOperation = 'multiply';
+  ctx.globalAlpha = 0.5;
+};

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hồ Sơ của Wioriz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .profile-container {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+            max-width: 600px;
+            width: 100%;
+            margin: 20px;
+        }
+        .profile-header {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .profile-header h1 {
+            margin: 0;
+        }
+        .profile-header p {
+            margin: 5px 0 0;
+        }
+        .profile-content {
+            padding: 20px;
+        }
+        .profile-content h2 {
+            margin-top: 0;
+        }
+        .profile-content p {
+            line-height: 1.6;
+        }
+        .profile-footer {
+            background: #f0f0f0;
+            text-align: center;
+            padding: 10px;
+        }
+        .profile-footer a {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .api-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            background-color: #333;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .api-button:hover {
+            background-color: #555;
+        }
+        audio {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-container">
+        <div class="profile-header">
+            <h1>Wioriz</h1>
+            <p>Không ồn ào, không danh tiếng</p>
+        </div>
+        <div class="profile-content">
+            <h2>Về Tôi</h2>
+            <p>What are you doing here?</p>
+            <h2>Kỹ Năng</h2>
+            <p>- JavaScript (Cơ bản)</p>
+            <h2>Liên Hệ</h2>
+            <p>Email: hungdev27@gmail.com</p>
+            <a href="api" class="api-button">API của tôi</a>
+        </div>
+        <div class="profile-footer">
+            <a href="#"></a>
+        </div>
+    </div>
+    <audio autoplay loop>
+        <source src="music.mp3" type="audio/mpeg">
+        Trình duyệt của bạn không hỗ trợ phát nhạc.
+    </audio>
+</body>
+</html>

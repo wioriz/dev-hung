@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document API | WIORIZ</title>
+		<style>
+				body {
+						font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+						background-color: #282c34;
+						color: #ffffff;
+						text-align: center;
+						padding: 20px;
+						margin: 0;
+				}
+				h1 {
+						font-size: 36px;
+						margin-bottom: 20px;
+				}
+				.api-list {
+						text-align: left;
+						margin: 0 auto;
+						max-width: 600px;
+						padding: 20px;
+						background-color: #3b4049;
+						border-radius: 10px;
+						box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+				}
+				.api-list h2 {
+						font-size: 24px;
+						margin-bottom: 15px;
+				}
+				.api-list p {
+						line-height: 1.8;
+				}
+				audio {
+						width: 100%;
+						max-width: 400px;
+						margin: 20px auto;
+						display: block;
+						background-color: #ffffff;
+						border-radius: 10px;
+						box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+				}
+				.play-button {
+						display: inline-block;
+						padding: 15px 30px;
+						font-size: 20px;
+						color: #ffffff;
+						background-color: #ff4757;
+						border: none;
+						border-radius: 30px;
+						cursor: pointer;
+						box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+						transition: background-color 0.3s ease, transform 0.2s;
+						margin-top: 30px;
+				}
+				.play-button:hover {
+						background-color: #e84118;
+				}
+				.play-button:active {
+						transform: scale(0.98);
+				}
+		</style>
+</head>
+<body>
+		<h1>WELCOME TO MY API WEB</h1>
+		<p>• 𝐀𝐮𝐭𝐡𝐨𝐫: WIORIZ</p>
+		<div class="api-list">
+				<h2>==== LIST API ====</h2>
+				<p>[ DOWNLOAD ]<br>
+				-> download FB: /api/fbdownload?url=<br><br>
+				[ MEDIA ]<br>
+				-> video gái: /api/media/vdgai<br><br>
+				-> ảnh cosplay: /api/media/cosplay</p>
+		</div>
+
+		<!-- Nút để người dùng phát audio -->
+		
+		<!-- Nhúng audio -->
+		<audio id="myAudio">
+				<source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+				Your browser does not support the audio element.
+		</audio>
+
+		<script>
+				function playAudio() {
+						var audio = document.getElementById('myAudio');
+						audio.play().catch(function(error) {
+								console.error('Error playing audio:', error);
+						});
+				}
+		</script>
+</body>
+</html>
